@@ -69,7 +69,6 @@ function App() {
         const payload = JSON.parse(dataEvent.data);
 
         const text = payload.choices[0].delta.content;
-        console.log(text);
 
         if (text && text !== "\n") {
           responseRef.current = responseRef.current + text;
